@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello users!</h1>
-    <ul id="userList"></ul>
+    <script src="script.js" defer type="module"></script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
 
-    <div>
-        <h3>If you are new here, write your name and choose a password:</h3>
-        <input type="text" id="newUser" placeholder="Name">
-        <input type="text" id="newUserPassword" placeholder="Password">
-        <button id="saveUserBtn">Save</button><br><br>
+    <div id="head">
+      <h1>Hello Users</h1>
+      <div id="meny"><button id="showUserListBtn">Visa användare</button></div>
+      <div id="userForm"></div>
+    </div>
+
+    <div id="root">
+
+    </div>
+
+    <div id="footer">
+    Våran fot
     </div>
     
-    <div>
-        <h3>If your already have an account, log in here:</h3>
-        <input type="text" id="loginUsername" placeholder="Username">
-        <input type="text" id="loginPassword" placeholder="Password">
-        <button id="loginUserBtn">Log in</button>
-        <button id="logoutUserBtn">Log out</button>
-    </div>
-    <h2 id="loginMessage">Welcome!</h2>
-</body>
-</html>
+    <!-- <ul id="userList"></ul> -->
 
+    <div>
+      <input type="text" id="newUser" />
+      <input type="text" id="newUserPassword" />
+      <button id="saveUserBtn">Spara</button>
+    </div>
+
+    <!-- <div>
+      <h3>Logga in här:</h3>
+      <input type="text" id="loginUsername" placeholder="Användarnamn" />
+      <input type="text" id="loginPassword" placeholder="Lösenord" />
+      <button id="loginUserBtn">Logga in</button>
+      <button id="logoutUserBtn">Logga ut</button>
+    </div> -->
+
+    <h2 id="userGreeting">Godmorgon!</h2>
+  </body>
+</html>
