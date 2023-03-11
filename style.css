@@ -1,10 +1,18 @@
 body {
     background-color: black;
-    color: gold;
+    color: rgb(241, 145, 12);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .userList {
-    background-color: gold;
+    background-color: rgb(241, 145, 12);
     color: black;
+}
+
+button {
+    background-color: lightgreen;
+}
+
+h2 {
+    font-size: 2rem;
 }
