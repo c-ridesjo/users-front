@@ -34,11 +34,9 @@ export function printLoginForm() {
                 }
                 else {
                     userGreeting.innerText = "Inloggning misslyckades, var vänlig och kontrollera användarnamn och lösenord."
-                }
-    
+                }    
            });
         });
-
         userForm.innerHTML = "";
         userForm.append(loginUsername, loginPassword, loginUserBtn);
 }

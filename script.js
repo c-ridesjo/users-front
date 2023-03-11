@@ -21,8 +21,6 @@ if (localStorage.getItem("username")) {
     printLoginForm();
 }
 
-
-
 let loggedInUser = localStorage.getItem("username");
 if(loggedInUser) {
     userGreeting.innerText = "Godmorgon " + loggedInUser;
@@ -78,7 +76,6 @@ function printUserInfo(userId) {
     root.innerHTML = "";
     root.append(userInfoDiv);
     })
-
 }
 
 saveUserBtn.addEventListener("click", () => {
@@ -103,9 +100,3 @@ saveUserBtn.addEventListener("click", () => {
    newUserPassword.value = "";
 });
 
-
-
-// logoutUserBtn.addEventListener("click", () => {
-//     localStorage.removeItem("username");
-//     userGreeting.innerText = "Du har blivit utloggad."
-// });
